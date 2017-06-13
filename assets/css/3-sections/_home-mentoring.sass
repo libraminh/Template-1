@@ -1,0 +1,90 @@
+section.mentoring
+  background:
+    image: url(../img/mentoring-bg.jpg)
+    size: cover
+    position: center
+  color: white
+  overflow: hidden
+
+  .faces
+    // background: pink
+    list-style: none
+    margin: -50px 0
+    padding: 20px 0px 0px 0px
+    height: calc(100% + 100px)
+    position: relative
+    top: 800px
+    transition: all .3s ease-in-out
+
+    &.launched
+      top: 0px
+
+    .face
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      margin-bottom: 20px
+      position: relative
+      background:
+        position: center
+        size: cover
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.4)
+      cursor: pointer
+
+      &.back-btn
+        background:
+          image: url(../img/back-icon.svg)
+          color: white
+          position: center
+          repeat: no-repeat
+          size: 30px 36px
+        display: none
+
+  .bubble
+    opacity: 0
+    position: absolute
+    left: 100%
+    bottom: 50%
+    width: 300px
+    margin-left: 15px
+    padding: 25px
+    background: rgba(0,0,0,0.8)
+    border-radius: 40px 40px 40px 5px
+    border: 3px solid white
+    transition: all .15s cubic-bezier(0.42, 0, 0, 1.39)
+    transform-origin: bottom left
+    pointer-events: none
+    transform: scale(0)
+
+  .face.has-bubble-open .bubble
+    opacity: 1
+    transform: scale(1)
+
+
+  .home-cta
+    color: #2cb4db
+
+  .home-lead
+    margin-top: 300px
+
+@media (max-width: 640px)
+  section.mentoring
+    overflow: visible
+
+    .faces
+      margin: 0
+      width: 120px *7
+      top: 230px
+
+      .face
+        display: inline-block
+        margin-right: 35px
+
+        &.back-btn
+          display: inline-block
+
+        .bubble
+          bottom: 95px
+          left: 0px
+          box-sizing: border-box
+          margin-left: 0

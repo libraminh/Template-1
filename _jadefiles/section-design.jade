@@ -1,0 +1,29 @@
+mixin design-img(link)
+  a&attributes(attributes).design-img-link
+    img&attributes(attributes)
+
+section.design
+  .flex.flex--center
+    .col-50.flex.flex--center.dribbble
+      .col-1
+        p.home-lead ...Updating Dribbble...
+        +design-img(href="http://www.youtube.com" data-color="orange" data-origin="#ea4c89")(src="assets/img/design-img/drib-1.jpg")
+        +design-img(href="http://www.youtube.com" data-color="grey" data-origin="#ea4c89")(src="assets/img/design-img/drib-2.jpg")
+        +design-img(href="http://www.youtube.com" data-color="red" data-origin="#ea4c89")(src="assets/img/design-img/drib-3.png")
+        +design-img(href="http://www.youtube.com" data-color="green" data-origin="#ea4c89")(src="assets/img/design-img/drib-4.jpg")
+        +design-img(href="http://www.youtube.com" data-color="pink" data-origin="#ea4c89")(src="assets/img/design-img/drib-5.jpg")
+        +design-img(href="http://www.youtube.com" data-color="lightblue" data-origin="#ea4c89")(src="assets/img/design-img/drib-6.jpg")
+        .cf
+        a(href="").home-cta See more on Dribbble
+
+    .col-50.flex.flex--center.behance
+      .col-1
+        p.home-lead ...and Behance...
+        +design-img(href="http://www.youtube.com" data-color="grey" data-origin="#1769ff")(src="assets/img/design-img/be-1.png")
+        +design-img(href="http://www.youtube.com" data-color="green" data-origin="#1769ff")(src="assets/img/design-img/be-2.jpg")
+        +design-img(href="http://www.youtube.com" data-color="blue" data-origin="#1769ff")(src="assets/img/design-img/be-3.jpg")
+        +design-img(href="http://www.youtube.com" data-color="red" data-origin="#1769ff")(src="assets/img/design-img/be-4.jpg")
+        +design-img(href="http://www.youtube.com" data-color="orange" data-origin="#1769ff")(src="assets/img/design-img/be-5.jpg")
+        +design-img(href="http://www.youtube.com" data-color="lightblue" data-origin="#1769ff")(src="assets/img/design-img/be-6.png")
+        .cf
+        a(href="").home-cta See more on Behance

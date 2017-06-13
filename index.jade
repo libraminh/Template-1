@@ -1,0 +1,27 @@
+//output:index.html
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Design + Code
+    link(rel="stylesheet" href="assets/css/main.css")
+  body
+    .home-wrap
+      include _jadefiles/header.jade
+
+      .home-sections
+
+        include _jadefiles/section-about.jade
+        include _jadefiles/section-youtube.jade
+        include _jadefiles/section-mentoring.jade
+        include _jadefiles/section-articles.jade
+        include _jadefiles/section-vine.jade
+        include _jadefiles/section-design.jade
+        include _jadefiles/section-note.jade
+        include _jadefiles/section-podcast.jade
+        include _jadefiles/footer.jade
+
+
+    script(src="assets/js/jquery-2.1.3.min.js")
+    script(src="assets/js/functions.js")
